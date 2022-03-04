@@ -1,0 +1,150 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titre recette"
+      "inviter recette";
+    height: 97vh;
+  }
+  
+  .titre {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". center ."
+      ". . .";
+    grid-area: titre;
+  }
+  
+  .center { grid-area: center; 
+    color: black;
+    font-size: 2.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+  
+
+
+  .inviter { grid-area: inviter; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    margin-left: 7vw;
+    border-left: solid 0.15vw  black;
+    padding: 3vw;
+    margin-bottom: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+  
+  .recette { grid-area: recette;
+    background-color:rgb(143, 161, 180); 
+    border-radius: 10px;
+    margin: 5vh;
+    box-shadow: -7px 7px 5px rgb(143, 161, 180);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.recette:hover{
+    box-shadow: -10px 10px 8px rgb(143, 161, 180);
+}
+ 
+.div-ingredients{
+  background: white;
+  width: 8vw;
+  height: 10vh;
+  border-radius: 5px;
+  border: solid 0.15vw rgb(95, 101, 107);
+  box-shadow: -1px 1px 1px rgb(95, 101, 107);
+  padding: 10px;
+  border-top: none;
+  border-right: none;
+  margin-top: 5vh;
+}
+
+.div-ingredients:hover{
+  box-shadow: -3px 3px 3px rgb(95, 101, 107);
+}
+
+
+.div-ingredients-inviter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+  #label-inviter{
+      color: black;
+      font-size: 1.5em;
+      margin-bottom: 5vh;
+  }
+
+  #input-inviter{
+      color: black;
+      margin-bottom: 5vh;
+      height: 5vh;
+      text-align: center;
+      font-size: 20px;
+  }
+
+  #button-generer{
+      width: 15vw;
+      border-radius: 10px;
+      height: 5vh;
+      background-color: white;
+      border: black solid 0.1vw;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #button-generer:hover{
+      background-color: rgb(138, 173, 212);
+      color: white;
+      border-color: white;
+  }
+
+  .label-ingredients{
+    color: black;
+    font-size: 1.5em;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  #label-lait{
+    margin-top: 3vh;
+  }
+  
+  #label-oeuf{
+    margin-top: 3vh;
+    margin-left: 1.5vw;
+  }
+
+  #label-beurre{
+    margin-top: 2vh;
+  }
+
+  #label-farine{
+    margin-top: 2vh;
+  }
+
+  .div-p{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+  }
